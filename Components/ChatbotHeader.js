@@ -7,16 +7,40 @@ export default class AddButton extends React.Component
 {
     render() {
         return(
+            <View style={{
+                flex: 1,
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+              }}>
+                <View style={{flex: 1, flexDirection: 'row'}} >
+                <Image source={require('../img/minimize.png')} /></View>
+                <View style={{flex: 1, flexDirection: 'row', height: 50}} >
+                <Image source={require('../img/chatbot_head_image.png')} 
+               style={{ width: 40, height: 40,   alignItems:"center"}}/>
+                 <Text>X Bot</Text>
+                 
+               
+                </View>
+              
+           
+              </View>
+
+         /*    <View>
           <View style={styles.container}>
            
               <Image source={require('../img/minimize.png')} />
+               </View>
+               <View style={{ alignItems:"center"}}>
+           
+              <Image source={require('../img/minimize.png')} />
+               </View>
               <Image source={require('../img/chatbot_head_image.png')} 
-               style={{ width: 40, height: 40,marginLeft:100}}/>
+               style={{ width: 40, height: 40,   alignItems:"center"}}/>
          
               
+      
               
-              
-              <Text>X Bot</Text></View>
+              <Text>X Bot</Text></View> */
             
 
         )
@@ -32,11 +56,11 @@ export default class AddButton extends React.Component
 const styles=StyleSheet.create({
     container: {
      
-        flexDirection: 'row',
+        flexDirection: 'column',
         margin:5,
-        minWidth: "100%",
-         minHeight: 40,
-         alignItems:"center"
+        minWidth: "50%",
+         minHeight: 20,
+      /*    alignItems:"center" */
       },
       // buttonContainer: {
       //   flex: 1,
