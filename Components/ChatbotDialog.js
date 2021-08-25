@@ -5,9 +5,6 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 import DialogHeader from '../Components/ChatbotHeader'
 import { FAB } from 'react-native-elements';
 
-
-
-
 // import heaaaa from '../img/chatbot_head_image.png';
 
 
@@ -39,7 +36,7 @@ class ChatbotDialog extends Component {
 
             />
           )}
-          color="red" />
+          color= '#737373' />
 
 
 
@@ -55,7 +52,7 @@ class ChatbotDialog extends Component {
           customStyles={{
             container: {
               borderRadius: 20,
-              margin: 10
+              marginHorizontal: 10
             }
           }}
         >

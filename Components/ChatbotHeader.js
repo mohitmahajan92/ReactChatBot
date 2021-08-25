@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 import { StyleSheet, Text, View,Button,Image } from 'react-native';
+import DataInput from '../Components/DataInput'
 import axios from 'axios';
 
 export default class AddButton extends React.Component
@@ -36,12 +37,13 @@ export default class AddButton extends React.Component
       this.setState({ color: 'wheat' });
     }, 2000);
   } */
-    
+
+
 
 
     render() {
         return(
-          <View>
+          <View style={{flex: 1, flexDirection: 'column'}} >
             <View style={{
                 flex: 1,
                 flexDirection: 'row',
@@ -54,33 +56,13 @@ export default class AddButton extends React.Component
                style={{ width: 40, height: 40,   alignItems:"center"}}/>
                  <Text>X Bot</Text>
                  
-              
+               
                 </View>
-             
-                </View>
-              
-               <Text style={{alignItems:'center',marginTop:50,marginLeft:50,fontSize:20}}>{this.state.color}</Text>
+              </View> 
+<DataInput />
+
               </View>
-
-         /*    <View>
-          <View style={styles.container}>
-           
-              <Image source={require('../img/mi,nimize.png')} />
-               </View>
-               <View style={{ alignItems:"center"}}>
-           
-              <Image source={require('../img/minimize.png')} />
-               </View>
-              <Image source={require('../img/chatbot_head_image.png')} 
-               style={{ width: 40, height: 40,   alignItems:"center"}}/>
-         
-              
-      
-              
-              <Text>X Bot</Text></View> */
-            
-
-        )
+              )
 
 
 
