@@ -5,6 +5,9 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 import DialogHeader from '../Components/ChatbotHeader'
 import { FAB } from 'react-native-elements';
 
+
+
+
 // import heaaaa from '../img/chatbot_head_image.png';
 
 
